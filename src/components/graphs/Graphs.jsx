@@ -4,36 +4,37 @@ import styles from '../styles/styles'
 import {Spark} from './Sparklines'
 import LineChart from './LineChart'
 import Stats from './Stats'
+import Spiral from "./Spiral";
+import '../../assets/css/dashboard.css'
 
 const charts = [
     {
         key: 'spark',
-        dataGrid: {x: 0, y: 0, w: 3, h: 2, static:true},
+        dataGrid: {x: 0, y: 0, w: 3, h: 3, static:true},
         graph: <Spark/>,
-        static: true
+        static: true,
+        heading: 'Spark Line'
     },
     {
-        key: 'stats1',
-        dataGrid: {x: 0, y: 0, w: 3, h: 3},
-        graph: <Stats />,
-        static: true
-    },
-    {
-        key: 'stats2',
-        dataGrid: {x: 0, y: 0, w: 3, h: 3},
-        graph: <Stats />,
-        static: true
+        key: 'spiral',
+        dataGrid: {x: 0, y: 0, w: 3, h: 6},
+        graph: <Spiral />,
+        static: true,
+        heading: 'Spiral Chart'
     },
     {
         key: 'lineChart',
-        dataGrid: {x: 3, y: 0, w: 9, h: 8},
-        draggableHandle: ".dragHandle",
+        dataGrid: {x: 3, y: 0, w: 9, h: 9},
         graph: <LineChart/>,
+        heading: 'Line Chart'
+
     },
     {
-        key: 'c',
+        key: 'stats',
         dataGrid: {x: 0, y: 1, w: 12, h: 8},
-        graph: 'some',
+        graph: <Stats/>,
+        heading: 'Spark Chart'
+
     }
 ]
 
@@ -45,6 +46,7 @@ class Graphs extends React.Component {
         return charts.map(chart => {
                 return (
                     <div key={chart.key} data-grid={{...chart.dataGrid}} style={styles.box}>
+                        <div className={'heading'}>{chart.heading}</div>
                         {chart.graph}
                     </div>
                 )
