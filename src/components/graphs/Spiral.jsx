@@ -9,7 +9,7 @@ const data = [
     {name: '35-39', uv: 8.22, fill: '#82ca9d'},
     {name: '40-49', uv: 8.63,  fill: '#a4de6c'},
     {name: '50+', uv: 2.63, fill: '#d0ed57'},
-    {name: 'unknow', uv: 6.67, fill: '#ffc658'}
+    {name: 'garbage', uv: 6.67, fill: '#ffc658'}
 ];
 
 const style = {

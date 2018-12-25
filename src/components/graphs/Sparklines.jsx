@@ -3,7 +3,7 @@ import { Sparklines, SparklinesLine,SparklinesSpots} from 'react-sparklines';
 
 function boxMullerRandom () {
     let phase = false,
-        x1, x2, w, z;
+        x1, x2, w;
 
     return (function() {
 

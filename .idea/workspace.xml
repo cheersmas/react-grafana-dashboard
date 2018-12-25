@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c5854f-affb-4375-8a9f-e474996ca122" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/graphs/Spiral.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graphs/Graphs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/Graphs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/graphs/Sparklines.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/Sparklines.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/graphs/Spiral.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/Spiral.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/assets/css/dashboard.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="210">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -61,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/graphs/Spiral.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="165">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -76,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/graphs/Sparklines.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="-6">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -88,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/graphs/LineChart.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+            <state relative-caret-position="514">
+              <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -143,17 +142,17 @@
         <option value="$PROJECT_DIR$/src/playground/test.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/App.jsx" />
-        <option value="$PROJECT_DIR$/src/components/graphs/Sparklines.jsx" />
         <option value="$PROJECT_DIR$/src/data/data-line.json" />
         <option value="$PROJECT_DIR$/src/common/theme.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/normalise.css" />
         <option value="$PROJECT_DIR$/src/components/styles/styles.js" />
         <option value="$PROJECT_DIR$/src/components/graphs/Stats.jsx" />
-        <option value="$PROJECT_DIR$/src/components/graphs/Spiral.jsx" />
-        <option value="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" />
         <option value="$PROJECT_DIR$/src/components/graphs/Graphs.jsx" />
         <option value="$PROJECT_DIR$/src/assets/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/src/components/graphs/Sparklines.jsx" />
+        <option value="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" />
+        <option value="$PROJECT_DIR$/src/components/graphs/Spiral.jsx" />
       </list>
     </option>
   </component>
@@ -283,12 +282,12 @@
       <option name="presentableId" value="Default" />
       <updated>1545664993273</updated>
       <workItem from="1545664996171" duration="11964000" />
-      <workItem from="1545727186834" duration="13926000" />
+      <workItem from="1545727186834" duration="14595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25890000" />
+    <option name="totallyTimeSpent" value="26559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -308,7 +307,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.1493976" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20963855" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,26 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graphs/Sparklines.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/graphs/Spiral.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graphs/Stats.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -497,12 +476,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graphs/LineChart.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="54" column="74" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
+        <state relative-caret-position="514">
+          <caret line="74" column="34" lean-forward="true" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/graphs/Sparklines.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -517,10 +513,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/css/dashboard.css">
+    <entry file="file://$PROJECT_DIR$/src/components/graphs/Spiral.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
