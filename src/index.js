@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import './normalise.css';
+import App from './components/App';
 import * as serviceWorker from './serviceWorker';
+
+//To check react grid
+import Grid from './playground/test'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
