@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11c5854f-affb-4375-8a9f-e474996ca122" name="Default Changelist" comment="fixed dragging and input out of focus">
-      <change afterPath="$PROJECT_DIR$/src/assets/icons/scroll-arrows.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/EditText.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/dashboard.css" afterDir="false" />
+    <list default="true" id="11c5854f-affb-4375-8a9f-e474996ca122" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/graphs/Graphs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/Graphs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/graphs/LineChart.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/graphs/Graphs.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="271">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -301,22 +294,30 @@
       <option name="presentableId" value="Default" />
       <updated>1545664993273</updated>
       <workItem from="1545664996171" duration="11964000" />
-      <workItem from="1545727186834" duration="19585000" />
+      <workItem from="1545727186834" duration="20067000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed dragging and input out of focus">
+      <created>1545796262933</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545796262933</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31549000" />
+    <option name="totallyTimeSpent" value="32031000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" weight="0.32891566" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
@@ -327,7 +328,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26024097" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28674698" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -337,6 +338,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="fixed dragging and input out of focus" />
     <option name="LAST_COMMIT_MESSAGE" value="fixed dragging and input out of focus" />
   </component>
@@ -549,8 +551,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/graphs/Graphs.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="271">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>

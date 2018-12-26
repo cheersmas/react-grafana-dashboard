@@ -32,7 +32,7 @@ const charts = [
     },
     {
         key: 'stats',
-        dataGrid: {x: 0, y: 1, w: 12, h: 8},
+        dataGrid: {x: 0, y: 1, w: 12, h: 11},
         graph: <Stats/>,
         heading: 'Spark Chart'
 
