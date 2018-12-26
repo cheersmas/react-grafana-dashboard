@@ -1,5 +1,5 @@
 import React from 'react'
-import {ResponsiveContainer, CartesianGrid, XAxis,Label, LineChart, YAxis, Tooltip, Legend, Line} from 'recharts'
+import {ResponsiveContainer, CartesianGrid, XAxis, LineChart, YAxis, Tooltip, Legend, Line} from 'recharts'
 import lineData from '../../data/data-line'
 
 export const theme = {
@@ -52,7 +52,7 @@ class LineGraph extends React.Component {
         return (
             <ResponsiveContainer>
                 <LineChart data={this.state.data}
-                           margin={{ top: 10, right: 40, left:10, bottom:40 }}
+                           margin={{ top: 10, right: 40, left:10, bottom:50 }}
                 >
                     <CartesianGrid stroke={theme.gridStroke}/>
                     <XAxis

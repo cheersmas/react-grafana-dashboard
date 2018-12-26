@@ -6,6 +6,7 @@ import LineChart from './LineChart'
 import Stats from './Stats'
 import Spiral from "./Spiral";
 import '../../assets/css/dashboard.css'
+import EditableText from "../form/EditText";
 
 const charts = [
     {
@@ -46,7 +47,10 @@ class Graphs extends React.Component {
         return charts.map(chart => {
                 return (
                     <div key={chart.key} data-grid={{...chart.dataGrid}} style={styles.box}>
-                        <div className={'heading'}>{chart.heading}</div>
+                        <div className={'heading'} >
+                            <div className={'dragMe'}/>
+                            <EditableText i={chart.key} defaultValue={chart.heading}/>
+                        </div>
                         {chart.graph}
                     </div>
                 )
@@ -57,7 +61,7 @@ class Graphs extends React.Component {
     render() {
         return (
             <div style={styles.graph}>
-            <GridLayout rowHeight={30} width={1200} verticalCompact={true} compactType={'vertical'}>
+            <GridLayout rowHeight={30} width={1200} verticalCompact={true} compactType={'vertical'} draggableHandle=".dragMe">
                 {this.renderCharts()}
             </GridLayout>
             </div>
@@ -66,3 +70,5 @@ class Graphs extends React.Component {
 }
 
 export default Graphs
+
+//TODO <div>Icons made by <a href="https://www.flaticon.com/authors/stephen-hutchings" title="Stephen Hutchings">Stephen Hutchings</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>e
