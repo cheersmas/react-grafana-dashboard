@@ -11,7 +11,7 @@ export const theme = {
     legendColor: '#7c7c7c'
 }
 
-class CustomizedAxisTick extends React.Component{
+export class CustomizedAxisTick extends React.Component{
     constructor(props){
         super(props)
     }
@@ -41,11 +41,22 @@ class LineGraph extends React.Component {
     }
 
     renderData() {
-        let data = lineData.map((item) => ({
-            date: (new Date(item.dt)).toLocaleTimeString(),
-            temperature: item.main.temp
-        }))
+
+        let data = []
+
+        for(let i=0; i<20; i++){
+            let obj={}
+            obj.name = i.toString()
+            obj.value = Math.floor((Math.random()*100)+1)
+            data.push(obj)
+        }
+
         this.setState({data})
+        // let data = lineData.map((item) => ({
+        //     date: (new Date(item.dt)).toLocaleTimeString(),
+        //     temperature: item.main.temp
+        // }))
+        // this.setState({data})
     }
 
     render() {
@@ -56,7 +67,7 @@ class LineGraph extends React.Component {
                 >
                     <CartesianGrid stroke={theme.gridStroke}/>
                     <XAxis
-                        dataKey="date" padding={{left: 30, right: 30}} tick={<CustomizedAxisTick/>}/>
+                        dataKey="name" padding={{left: 30, right: 30}} tick={<CustomizedAxisTick/>}/>
                     <YAxis
                         domain={['dataMin-5', 'dataMax+10']} tick={<CustomizedAxisTick/>}/>
                     <Tooltip
@@ -67,7 +78,7 @@ class LineGraph extends React.Component {
                         height={36}/>
                     <Line
                         type="linear"
-                        dataKey="temperature"
+                        dataKey="value"
                         stroke={theme.lineStroke}
                         dot={{ stroke: theme.dotStroke, strokeWidth: 1, fill:theme.dotFill}}
                         activeDot/>
