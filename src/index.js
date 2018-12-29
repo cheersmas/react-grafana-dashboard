@@ -1,16 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import './normalise.css';
 import App from './components/App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
 
-//To check react grid
-import Grid from './playground/test'
+const store = configureStore(); // You can also pass in an initialState here
 
-ReactDOM.render(<App />, document.getElementById('root'));
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+/**
+ *Todo
+ * integrate redux to this and design a flow to create a new state all together
+ */
