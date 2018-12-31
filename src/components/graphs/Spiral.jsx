@@ -1,6 +1,8 @@
 import React from 'react'
 import {RadialBarChart, ResponsiveContainer, RadialBar, Tooltip, Legend, LineChart} from 'recharts'
 import {theme} from "./LineChart";
+import {updateData} from "../../actions/action-dispatcher";
+import {connect} from 'react-redux'
 
 const data = [
     {name: '18-24', uv: 12.47,fill: '#8884d8'},
@@ -22,23 +24,46 @@ const style = {
 class Spiral extends React.Component{
     constructor(props){
         super(props)
+        this.state = {
+            data: null
+        }
+    }
+
+
+    static getDerivedStateFromProps(props) {
+        return {data: props.spiralData}
+    }
+
+    componentDidMount() {
+        this.props.updateData('spiral')
     }
 
     render () {
         return (
             <ResponsiveContainer>
-            <RadialBarChart data={data}>
+            <RadialBarChart data={this.state.data}>
                 <Tooltip
                     wrapperStyle={{backgroundColor:'#000', fontSize:12}}/>
                 <Legend
                     wrapperStyle={{color:theme.legendColor, fontSize:12}}
                     layout={'horizontal'} verticalAlign={'top'}
                     height={50}/>
-                <RadialBar minAngle={70} background={{fill:style.background}} clockWise={true} dataKey='uv'/>
+                <RadialBar minAngle={70} background={{fill:style.background}} clockWise={true} dataKey='value'/>
             </RadialBarChart>
             </ResponsiveContainer>
         );
     }
 }
 
-export default Spiral
+const mapStateToProps = (state) => {
+    return {
+        spiralData: state.spiral.spiralData
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        updateData: (type) => dispatch(updateData(type))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Spiral)

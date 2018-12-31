@@ -1,6 +1,8 @@
 import React from 'react'
 import {ResponsiveContainer, CartesianGrid, XAxis, LineChart, YAxis, Tooltip, Legend, Line} from 'recharts'
 import lineData from '../../data/data-line'
+import {updateData} from "../../actions/action-dispatcher";
+import connect from "react-redux/es/connect/connect";
 
 export const theme = {
     tickText: '#7c7c7c',
@@ -31,32 +33,16 @@ class LineGraph extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: []
+            data: null
         }
-        this.renderData = this.renderData.bind(this);
+    }
+
+    static getDerivedStateFromProps(props) {
+        return {data: props.lineData}
     }
 
     componentDidMount() {
-        this.renderData()
-    }
-
-    renderData() {
-
-        let data = []
-
-        for(let i=0; i<20; i++){
-            let obj={}
-            obj.name = i.toString()
-            obj.value = Math.floor((Math.random()*100)+1)
-            data.push(obj)
-        }
-
-        this.setState({data})
-        // let data = lineData.map((item) => ({
-        //     date: (new Date(item.dt)).toLocaleTimeString(),
-        //     temperature: item.main.temp
-        // }))
-        // this.setState({data})
+        this.props.updateData('line')
     }
 
     render() {
@@ -89,4 +75,15 @@ class LineGraph extends React.Component {
     }
 }
 
-export default LineGraph
+const mapStateToProps = (state) => {
+    return {
+        lineData: state.line.lineData
+    }
+}
+const mapDispatchToProps = (dispatch) => {
+    return {
+        updateData: (type) => dispatch(updateData(type))
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LineGraph)
