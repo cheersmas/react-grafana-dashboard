@@ -1,35 +1,34 @@
 import actionTypes from '../actions/action-types'
 
-export function updateBarData(state = {}, action) {
+export function bar(state = {}, action) {
+    const newState = JSON.parse(JSON.stringify(state))
     switch (action.type) {
         case actionTypes.UPDATE_BAR_DATA:
-            let newState = state
-            state.barData = action.payload
+            newState.barData = action.payload
             return newState;
-
         default:
             return state;
     }
 }
 
-export function updateLineData(state = {}, action) {
+export function line(state = {}, action) {
+    const newState = JSON.parse(JSON.stringify(state))
     switch (action.type) {
         case actionTypes.UPDATE_LINE_DATA:
-            let newState = state
-            state.lineData = action.payload
-            return newState;
+            newState.lineData = action.payload
+            return newState
 
         default:
             return state;
     }
 }
 
-export function updateSpiralData(state = {}, action) {
+export function spiral(state = {}, action) {
+    const newState = JSON.parse(JSON.stringify(state))
     switch (action.type) {
         case actionTypes.UPDATE_SPIRAL_DATA:
-            let newState = state
-            state.spiralData = action.payload
-            return newState;
+            newState.spiralData = action.payload
+            return newState
 
         default:
             return state;

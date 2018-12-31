@@ -22,6 +22,6 @@ export default class App extends React.Component{
                 <Graphs />
             </div>
         )
-    }
+    }v
 
 }

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import { updateLineData, updateBarData, updateSpiralData} from './reducers';
+import { bar, line, spiral} from './reducers';
 
 export default combineReducers({
-    updateBarData,
-    updateSpiralData,
-    updateLineData
+    bar,
+    line,
+    spiral
 });

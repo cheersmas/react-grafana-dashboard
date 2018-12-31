@@ -29,7 +29,9 @@ const generateBarData = () => {
         obj.name = i.toString()
         let num = Math.floor((Math.random()*100)+1)
         num *= Math.floor(Math.random()*2) === 1 ? 1 : -1
-        obj.value = num
+        obj.pv = num
+        num *= Math.floor(Math.random()*2) === 1 ? 1 : -1
+        obj.uv = num
         data.push(obj)
     }
 
